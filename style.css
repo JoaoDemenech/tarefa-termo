@@ -1,0 +1,37 @@
+body {
+    background: #121214;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.linha {
+    display: flex;
+    gap: 5px;
+}
+
+.celula {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Cores do resultado */
+.correto { background: #3aa394; border-color: #3aa394; }
+.errado { background: #d3ad69; border-color: #d3ad69; }
+.ausente { background: #3a3a3c; border-color: #3a3a3c; }
+
+#btn { display: none; padding: 10px 20px; cursor: pointer; }
